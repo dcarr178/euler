@@ -1,0 +1,36 @@
+{
+  "name": "euler",
+  "version": "1.0.0",
+  "description": "Project Euler assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcarr178/euler.git"
+  },
+  "author": "David Carr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcarr178/euler/issues"
+  },
+  "homepage": "https://github.com/dcarr178/euler#readme",
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "eslint": "^4.4.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.6.0",
+    "tslint-eslint-rules": "^5.0.0",
+    "typescript": "^2.7.2"
+  }
+}
