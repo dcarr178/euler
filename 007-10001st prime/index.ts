@@ -1,7 +1,7 @@
 // capture start time
 const startTime = process.hrtime();
 
-import {Constants, PrimeUtils} from '../shared/utils'
+import { Constants, PrimeUtils } from '../shared/utils'
 
 // initialize variables
 const numberPrimeNumbersToFind = 10001; // from project description
