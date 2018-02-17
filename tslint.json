@@ -10,6 +10,7 @@
     ] //diables warning about async functions requiring promise constructor
   },
   "rules": {
+    "no-implicit-dependencies": false,
     "import-name": false,
     "align": [
       true,

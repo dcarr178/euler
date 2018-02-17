@@ -1,25 +1,13 @@
 // capture start time
 const startTime = process.hrtime();
 
-import { Constants, PrimeUtils } from '../shared/utils'
+import { Constants, PrimeUtils } from '@shared/utils';
 
-// initialize variables
-const numberPrimeNumbersToFind = 10001; // from project description
-let primeNumbersFound = 1; // 2 is the first prime number so lets skip it
-let currentNumber = 3; // start at three so we can evaluate odd numbers from there
-
-// loop until we have found enough prime numbers
-do {
-  if (PrimeUtils.isPrime(currentNumber)) {
-    primeNumbersFound += 1;
-
-    // display every 1,000th result
-    if (primeNumbersFound % 1000 === 1) {
-      console.log(`${primeNumbersFound}: ${currentNumber}`);
-    }
-  }
-  currentNumber += 2; // only evaluate odd numbers
-} while (primeNumbersFound < numberPrimeNumbersToFind);
+// run utility
+// const primeNumberToFind = 6;
+const primeNumberToFind = 10001; // from project 007 assignment
+const result = PrimeUtils.findPrimeNumberX(primeNumberToFind);
+console.log(`Prime number ${primeNumberToFind} is ${result}`);
 
 // display run time
 const runTime = process.hrtime(startTime);
