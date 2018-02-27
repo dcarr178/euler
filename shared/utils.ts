@@ -1,4 +1,5 @@
 const debug = false; // turn debug off to minimize console messages
+const bignum = require('bignum');
 
 export namespace Constants {
   export const NS_PER_SEC = 1e9;
@@ -52,6 +53,31 @@ export namespace PrimeUtils {
 
     return 1;
 
+  };
+
+}
+
+export namespace SumUtils {
+  export const countDigits = (n: number) => {
+    let count = 0;
+    if (n > 1) count += 1;
+
+    while (n / 10 >= 1) {
+      n /= 10;
+      count += 1;
+    }
+
+    return count;
+  };
+
+  export const DigitSum = (digits: string): number => {
+    let sum = 0;
+    const digitArray = digits.split('');
+    for (let i = 0; i < digitArray.length; i += 1) {
+      const val = parseInt(digitArray[i], 10);
+      sum += val;
+    }
+    return sum;
   };
 
 }
